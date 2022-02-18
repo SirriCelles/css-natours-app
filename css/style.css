@@ -27,7 +27,7 @@ body {
 
 .header {
     /* This is approximately 95% of the viewport height */
-    height: 95vh;
+    height: 95vh; /*Height of element should be 95% of veiwport height*/
     background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.801), rgba(40, 180, 133, 0.801)), url("../img/hero.jpg");
     block-size: cover;
     background-position: top;
