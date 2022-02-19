@@ -33,3 +33,14 @@
 `backspace-visibilty: hidden;`
 for the the container element
 
+#### What pseudo-elements and pseudo-classes are
+- pseudo classes are a special state of a selector. eg `a:hover` the `hover` is state of the anchor selector.
+- An inline-block element can be treated as text in terms of positioning by setting `text-align`
+- The transition property has to be on the initial states.
+
+#### How and why to use the `::after` pseudo-element
+- The ::after pseudo-element acts like a virtual element riight after the element that we're selecting. You can the style that element. it is powerful to do some cool effects
+- The trick is adding the element that looks exactly like the previous but placed behind the previous or original.
+- For and after element to be visible you need to specify its `content` property which can be empty as well. Same thing with the `display property`
+
+#### How to creat the creative hover animation effect using `transition` property

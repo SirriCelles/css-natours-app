@@ -119,6 +119,19 @@ body {
     }
 }
 
+@keyframes moveInBottom {
+    0%{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
 /* pseudo classes are a special state of a selector */
 .btn:link ,
 .btn:visited{
@@ -128,18 +141,51 @@ body {
     display: inline-block;
     text-align: center;
     border-radius: 100px;
+    transition: all .2s;
+    position: relative;
 }
 
 .btn:hover{
     transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0 , 0, 0.2);
 }
 
 .btn:active{
     transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0 , 0, 0.2);
+
 }
 
 .btn-white {
     background-color: white;
     color: #777;
-
 }
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after {
+    background-color: #fff;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInBottom 1s ease-out .75s;
+    animation-fill-mode: backwards; /*Will automatically apply the zero percent before the animation starts*/
+}
+
+
