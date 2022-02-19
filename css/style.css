@@ -51,7 +51,7 @@ body {
     position: absolute;
     top: 40%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); /* this propety values are nolonger in relation to the parent values, But t the element it self*/
     text-align: center;
 }
 
