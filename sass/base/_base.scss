@@ -1,0 +1,20 @@
+/* Performing a basic reset inorder to make every browser render the page in the same way*/
+/* applies stlye to all elements */
+*
+*::after
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    // this defines what 1rem should be
+    font-size: 62.5%;
+}
+
+/* we specify font styles in body becus properties related to fonts are inherited. Better practice */
+body {
+    box-sizing: border-box;
+}
+

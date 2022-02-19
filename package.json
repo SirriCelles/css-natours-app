@@ -4,6 +4,7 @@
   "description": "web site with pure css and scss",
   "main": "index.js",
   "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

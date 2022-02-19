@@ -238,3 +238,9 @@ vendors/ - all third party css goes
 ### Installing Sass
 - npm init
 - npm install node-sass --save-dev
+- compile node-sass by writing an npm script
+
+#### 7-1 Pattern.
+- Partial files always start with an import
+- This architecture is designed to handle large multi-page websites or web apps.
+- 
