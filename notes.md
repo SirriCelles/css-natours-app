@@ -169,7 +169,12 @@ Viewport size and dimensions of images
 - Element is removed from the normal flow;
 - Text and inline elements will wrap around the floated element
 - The container will not adjust its height to the element.
--`float: left`, `float: right`
+-`float: left`, `float: right`.
+- when using float , add the `clearfix` class ie. .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
 #### Absolute Positioning
 - Just like with float, when you set the position to `absolute`, the Element is removed from the normal flow
 - No impact on surrounding content or elements;
@@ -213,3 +218,23 @@ themes/ - If you want to implement different visual themes
 abstracts/ - code that  doesn't output any css
 vendors/ - all third party css goes
 
+## SASS
+#### What is SASS and How does it work?
+- Sass is a CSS preprocessor, an extension of CSS that adds power and elegance to the basic language
+- SASS code > compiled to > (sass compiler) >> complied CSS code.
+- CSS gets very messy very quickly, we use SASS to fix these problems.
+- SASS provides a couple of handy features and tools css doesnot have
+
+#### MAIN SASS Features
+- VARIABLES: for reusable values such as colors, font-sizes, spacing etc
+- NESTING: To nest selectors inside one another to allow us write less code.
+- OPERATORS: For mathematical operations right inside CSS.
+- PARTIALS AND IMPORTS: Most important and most useful features of Sass. to write CSS in different files and importing them all into one single file;
+- MIXINS: to write usuable pieces of css code
+- FUNCTIONS: similar to mixins, with the differnce that they produce a value that can be used.
+- EXTENDS: Can be used to make different selectors inherit declarations that are common to all of them.
+- CONTROL DIRECTIVES: For writing complex code using conditionals and loops.
+
+### Installing Sass
+- npm init
+- npm install node-sass --save-dev

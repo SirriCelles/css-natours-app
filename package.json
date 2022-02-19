@@ -1,0 +1,22 @@
+{
+  "name": "css-natours-app",
+  "version": "1.0.0",
+  "description": "web site with pure css and scss",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SirriCelles/css-natours-app.git"
+  },
+  "author": "Sirri Celles",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SirriCelles/css-natours-app/issues"
+  },
+  "homepage": "https://github.com/SirriCelles/css-natours-app#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
