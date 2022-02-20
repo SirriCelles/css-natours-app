@@ -266,3 +266,14 @@ vendors/ - all third party css goes
 
 #### MEDIA QUERIES
 - allows us to change styles on certain viewport widths(break points) allowing us to create different version of ou website fo our website for different widths
+
+- ##### LEARNING
+- Thinking about components
+- How and why to use utility classes
+- How to use `backgroud-clip` property
+- How to `transform` multiple properties at the same time
+- How to use `outline-offset` property together with outline
+- How to style elements that are not hovered while others are.
+-
+
+- Utility classes in css are very simple css classes with just one goal
