@@ -1,0 +1,59 @@
+// starting with row. First define a width for the row
+.grid-test {
+    .row {
+        max-width: $grid-width;
+        background-color: $color-nice-grey;
+        // center block elements inside another block element.
+        margin: 0 auto;
+        color: $color-white;
+        // margin-bottom: $gutter-vertical;
+
+        // &:last-child {
+        //     margin-bottom: 0;
+        // }
+
+        // without the not it will simply select the last child. But now we select everything except the last child
+        &:not(:last-child) {
+            margin-bottom: $gutter-vertical;
+        }
+        @include clearfix;
+
+        // selects all elements in which the class attribute starts with col-
+        [class^="col-"] {
+            float: left;
+            background-color: orangered;
+
+            &:not(:last-child) {
+                margin-right: $horizontal-gutter;
+            }
+        }
+
+        .col-1-of-2 {
+            width: calc((100% - #{$horizontal-gutter})/2);
+
+
+        }
+
+        .col-1-of-3 {
+            width: calc((100% - 2 * #{$horizontal-gutter})/3);
+
+        }
+
+        .col-1-of-4 {
+            width: calc((100% - 3 * #{$horizontal-gutter})/4);
+        }
+
+        .col-2-of-3 {
+            width: calc(2*((100% - 2 * #{$horizontal-gutter})/3) + #{$horizontal-gutter});
+        }
+
+        .col-2-of-4 {
+            width: calc(2 * ((100% - 3 * #{$horizontal-gutter})/4) +  #{$horizontal-gutter});
+        }
+
+        .col-3-of-4 {
+            width: calc(3 * ((100% - 3 * #{$horizontal-gutter})/4) +  2 *#{$horizontal-gutter});
+        }
+
+    }
+}

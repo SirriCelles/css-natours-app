@@ -121,6 +121,35 @@ body {
   animation-fill-mode: backwards;
   /*Will automatically apply the zero percent before the animation starts*/ }
 
+.grid-test .row {
+  max-width: 114rem;
+  background-color: #eee;
+  margin: 0 auto;
+  color: #fff; }
+  .grid-test .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .grid-test .row::after {
+    content: "";
+    clear: both;
+    display: table; }
+  .grid-test .row [class^="col-"] {
+    float: left;
+    background-color: orangered; }
+    .grid-test .row [class^="col-"]:not(:last-child) {
+      margin-right: 5rem; }
+  .grid-test .row .col-1-of-2 {
+    width: calc((100% - 5rem)/2); }
+  .grid-test .row .col-1-of-3 {
+    width: calc((100% - 2 * 5rem)/3); }
+  .grid-test .row .col-1-of-4 {
+    width: calc((100% - 3 * 5rem)/4); }
+  .grid-test .row .col-2-of-3 {
+    width: calc(2*((100% - 2 * 5rem)/3) + 5rem); }
+  .grid-test .row .col-2-of-4 {
+    width: calc(2 * ((100% - 3 * 5rem)/4) +  5rem); }
+  .grid-test .row .col-3-of-4 {
+    width: calc(3 * ((100% - 3 * 5rem)/4) +  2 *5rem); }
+
 .header {
   /* This is approximately 95% of the viewport height */
   height: 95vh;

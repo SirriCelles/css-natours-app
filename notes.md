@@ -243,4 +243,26 @@ vendors/ - all third party css goes
 #### 7-1 Pattern.
 - Partial files always start with an import
 - This architecture is designed to handle large multi-page websites or web apps.
-- 
+-
+### Basics of Responsive Design
+####  FLUID GRIDS AND LAYOUTS
+- To allow content to easily adapt to the current viewport width used to browse the website. Uses % rather than px for all layout-related lengths.
+- There are currently three major ways of laying out a web page or app.
+- Apart from float layouts modern alternatives include flex box and css grid
+- FLEX BOX offers an amazing way of laying out elements in a one dimensional row,
+- Css grid is perfect for creating the overall layout of a page. with two dimensional grids.
+
+##### How to architect and build a simple grid system;
+- A grid is a design system which allows us to build consistent interfaces. Allows us to devide our available space is a specified number of parts.
+##### How Attribute selector works
+##### How the `:not` pseudo-class works
+##### How `calc()` works and whats the differences between `calc()` and simple Sass operations
+
+
+#### FLEXIBLE/RESPONSIVE IMAGES
+- Images behave differentl than text-content, and so we need to ensure that they also adapt nicely to the current viewport.
+- This is done by defining their dimensions in % rather than fixed values
+- make up the biggest part of the site in terms of size so, we shold optimize the images for different width.
+
+#### MEDIA QUERIES
+- allows us to change styles on certain viewport widths(break points) allowing us to create different version of ou website fo our website for different widths
