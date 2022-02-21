@@ -1,0 +1,44 @@
+.composition {
+    position: relative; // the (0,0) coordinate will be on the top left corner of this composition element
+
+    &__photo {
+        width: 55%;
+        box-shadow: 0 1.5rem 4rem rgba($color: $color-black, $alpha: .4);
+        position: absolute;
+        z-index: 10;
+        transition: all .2s;
+        outline-offset: 2rem; // Gives space the outline and the element
+
+
+
+        &--p1 {
+            top: -2rem;
+            left: 0;
+        }
+
+        &--p2 {
+            top: 2rem;
+            right: 0;
+        }
+
+        &--p3 {
+            top: 10rem;
+            left: 20%;
+        }
+
+        &:hover {
+            outline: 1.5rem solid $color-primary;
+            border-radius: 0;
+            transform: scale(1.05) translateY(-.5rem);
+            box-shadow: 0 2.5rem 4rem rgba($color: $color-black, $alpha: .5);
+            z-index: 20;
+
+        }
+    }
+
+    // composition:hover composition__photo:not(:hover)
+
+    &:hover &__photo:not(:hover) {
+        transform: scale(.95);
+    }
+}
