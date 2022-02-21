@@ -1,0 +1,38 @@
+.card {
+    perspective: 150rem;
+    // making it work in firefox
+    -moz-perspective: 150rem;
+    //define perspective property on the parent
+    &__side {
+        height: 50rem;
+        color: $color-white;
+        font-size: 2rem;
+        transition: all .8s;
+        background-color: orangered;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+
+        &--front {
+            background-color: orangered;
+
+            z-index: 1;
+
+        }
+
+        &--back {
+            background-color: green;
+            transform: rotateY(180deg);
+            z-index: .5;
+        }
+    }
+
+    &:hover  &__side--front {
+        transform: rotateY(180deg);
+    }
+
+    &:hover  &__side--back {
+        transform: rotateY(0);
+    }
+}

@@ -277,3 +277,9 @@ vendors/ - all third party css goes
 -
 
 - Utility classes in css are very simple css classes with just one goal
+
+- How to build an amazing rotating card effect
+- How to use `perspective` in css
+- How to use `backface-visibility` property
+- Using background blend model
+- How and when to use `box-decoration-break`

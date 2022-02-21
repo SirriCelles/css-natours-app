@@ -6,7 +6,7 @@
   "scripts": {
     "compile:sass": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 sass/main.scss css/style.css -w",
     "css-minify": "cleancss --level 1 --format breaksWith=lf --source-map --source-map-inline-sources --output css/styles.min.css css/styles.css",
-    "process-styles": "npm run compile:sass",
+    "process-styles": "node-sass sass/main.scss css/style.css -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
