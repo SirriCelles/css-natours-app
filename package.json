@@ -4,7 +4,9 @@
   "description": "web site with pure css and scss",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "compile:sass": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 sass/main.scss css/style.css -w",
+    "css-minify": "cleancss --level 1 --format breaksWith=lf --source-map --source-map-inline-sources --output css/styles.min.css css/styles.css",
+    "process-styles": "npm run compile:sass && npm run css-minify",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +20,7 @@
   },
   "homepage": "https://github.com/SirriCelles/css-natours-app#readme",
   "devDependencies": {
+    "clean-css-cli": "^5.5.2",
     "node-sass": "^7.0.1"
   }
 }
