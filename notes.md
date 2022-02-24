@@ -16,6 +16,7 @@
 }
 #### How to clip parts of an element using `clip-path`
 - The clip-path CSS property creates a clipping region that sets what part of an element should be shown. Parts that are inside the region are shown, while those outside are hidden. use this tool for cliping `https://bennettfeely.com/clippy/`.
+- clip-path property in google chrome breaks the `overflow` property
 
 #### The easiest way to center anything with the `transform, top, and left` properties.
 - eg `top: 40px`, has a counting reference from where to start which has it's position. This position is initially has to be set eg `relative`.
@@ -284,5 +285,16 @@ vendors/ - all third party css goes
 - Using background blend model
 - How and when to use `box-decoration-break`
 
+##### make text flow around shapes with the `shape-outside and float`
+- using the shape float to make content float around as if it was floating around a circle. Its takes a vectorized shape. the element has to be floated, it has to have a defined height and width
+- The best way to add space to a floated element is not to use margins or paddings but the `transform property`
+
+
+- apply a filter to images;
+- Create a background video covering of an entire section
+- Use the `<video>` HTML element
+- where and when to use the `object-fit`
+
 ## USEFUL LINKS
-- `unsplash.com`
+- `unsplash.com` - For free images
+- `coverr.co` for free videos
