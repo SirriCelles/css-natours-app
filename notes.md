@@ -290,11 +290,19 @@ vendors/ - all third party css goes
 - The best way to add space to a floated element is not to use margins or paddings but the `transform property`
 
 
-- apply a filter to images;
+#### apply a filter to images;
+- use the `filter property` of css.
+
 - Create a background video covering of an entire section
 - Use the `<video>` HTML element
 - where and when to use the `object-fit`
 
+- How to impliment `solid-color gradients`
+- How the `general `and `adjacent` siblings selectors work and why we need themm
+- How to use the `::input-placehloder`
+- How and when to use the `focus:invalid, placeholder-shown` and `:checked pseudo-slasses`
+- Techniques to build custom radio buttons
+ 
 ## USEFUL LINKS
 - `unsplash.com` - For free images
 - `coverr.co` for free videos
