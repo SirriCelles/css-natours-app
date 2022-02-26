@@ -302,7 +302,7 @@ vendors/ - all third party css goes
 - How to use the `::input-placehloder`
 - How and when to use the `focus:invalid, placeholder-shown` and `:checked pseudo-slasses`
 - Techniques to build custom radio buttons
- 
+
 ## USEFUL LINKS
 - `unsplash.com` - For free images
 - `coverr.co` for free videos
