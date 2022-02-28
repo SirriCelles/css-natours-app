@@ -306,3 +306,5 @@ vendors/ - all third party css goes
 ## USEFUL LINKS
 - `unsplash.com` - For free images
 - `coverr.co` for free videos
+- `https://easings.net/` and `https://cubic-bezier.com/#.17,.67,.83,.67` for transitions
+- 
